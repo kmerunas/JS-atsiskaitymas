@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper" id="page-wrapper">
+      <header>
+        <a class="logo" href="../index.html">parduodu.lt</a>
+        <nav>
+          <ul>
+            <li><a href="../insert/index.html">įdėkite skelbimą</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="cards-wrapper" class="cards-wrapper"></div>
+    </div>
+    <div class="listing-wrapper">
+      <div class="left-side-bar">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+        <h3 id="price"></h3>
+        <h4 id="location"></h4>
+      </div>
+      <div class="right-side-bar">
+        <img class="listing-img" id="listing-img" />
+      </div>
+    </div>
+    <div class="listing-delete-bar">
+      <button class="delete-btn" id="delete-btn">Ištrinti skelbimą</button>
+      <h3 class="success-message" id="success-message"></h3>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

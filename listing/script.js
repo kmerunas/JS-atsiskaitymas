@@ -56,7 +56,7 @@ deleteButton.addEventListener("click", async () => {
     successMessage.textContent = "Skelbimas buvo sėkmingai ištrintas";
     setTimeout(() => {
       document.location.href = "../index.html";
-    }, 1000);
+    }, 2000);
   }
 
   console.log(data);

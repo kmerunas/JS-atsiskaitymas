@@ -2,6 +2,7 @@ const titleInput = document.getElementById("title-input");
 const priceInput = document.getElementById("price-input");
 const imgInput = document.getElementById("img-input");
 const descriptionInput = document.getElementById("description-input");
+const locationInput = document.getElementById("location-input");
 const submitButton = document.getElementById("submit-btn");
 const form = document.getElementById("form");
 
@@ -22,7 +23,8 @@ submitButton.addEventListener("click", async () => {
     !titleInput.value ||
     !priceInput.value ||
     !imgInput.value ||
-    !descriptionInput.value
+    !descriptionInput.value ||
+    !locationInput.value
   ) {
     console.log("Please fill all the data");
     return;
@@ -46,11 +48,16 @@ submitButton.addEventListener("click", async () => {
     console.log("minimum of 10 symbols");
     return;
   }
+  if (locationInput.value.length < 4) {
+    console.log("minimum of 4 symbols");
+    return;
+  }
   const listing = {
     title: titleInput.value,
     price: priceInput.value,
     img: imgInput.value,
     description: descriptionInput.value,
+    location: locationInput.value,
   };
   const response = await insertListing(listing);
 
@@ -59,5 +66,8 @@ submitButton.addEventListener("click", async () => {
     successMessage.setAttribute("class", "success-message");
     successMessage.textContent = "Skelbimas sėkmingai patalpintas";
     form.append(successMessage);
+    setTimeout(() => {
+      document.location.href = "../index.html";
+    }, 2000);
   }
 });

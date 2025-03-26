@@ -1,13 +1,6 @@
+import { fetchData } from "./utils/fetch.js";
+
 const cardsWrapper = document.getElementById("cards-wrapper");
-
-const fetchData = async () => {
-  const response = await fetch(
-    "https://67daefd51fd9e43fe472e9e9.mockapi.io/listings"
-  );
-  const data = await response.json();
-
-  return data;
-};
 
 const buildCards = (items) => {
   items.forEach((item) => {

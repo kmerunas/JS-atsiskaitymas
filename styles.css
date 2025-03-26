@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Noto Sans Wancho", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -14,12 +13,6 @@ body {
     rgba(233, 233, 233, 1) 27%,
     rgba(129, 126, 126, 1) 92%
   );
-  /* background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 6%,
-    rgba(167, 167, 167, 1) 100%
-  ); */
 }
 header {
   background: rgb(223, 223, 223);
@@ -116,7 +109,6 @@ nav ul:hover {
     rgba(50, 50, 50, 1) 71%
   );
   color: white;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
@@ -137,7 +129,6 @@ nav ul:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
     li a {
       color: white;
       text-decoration: none;

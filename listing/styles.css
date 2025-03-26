@@ -64,7 +64,6 @@ nav ul:hover {
 .logo::first-letter {
   color: #cb0000;
 }
-
 .listing-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,6 +80,10 @@ nav ul:hover {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  order: 1;
+}
+.right-side-bar {
+  order: 2;
 }
 .delete-btn {
   background: rgb(207, 21, 21);
@@ -119,7 +122,6 @@ nav ul:hover {
     rgba(50, 50, 50, 1) 71%
   );
   color: white;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
@@ -140,7 +142,6 @@ nav ul:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
     li a {
       color: white;
       text-decoration: none;
@@ -155,14 +156,17 @@ nav ul:hover {
   .listing-wrapper {
     grid-template-columns: 1fr;
     justify-items: center;
-    /* gap: 2rem; */
   }
   .listing-img {
-    width: 300px;
+    width: 400px;
   }
   .left-side-bar {
     padding-left: 5rem;
     padding-right: 5rem;
+    order: 2;
+  }
+  .right-side-bar {
+    order: 1;
   }
   .footer-wrapper {
     grid-template-columns: 1fr;
